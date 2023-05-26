@@ -9,7 +9,42 @@
     <title>Code Quiz</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <header>
+      <a
+        class="highScores"
+        href="file:///Users/jordanolguin/Desktop/bootcamp-challenges/CodeQuiz/highscores.html"
+        >High Scores</a
+      >
+
+      <p class="timer"></p>
+    </header>
+    <section class="gameBox" id="start" data-state="visible">
+      <div>
+        <h1>Coding Quiz Challenge</h1>
+        <button class="startButton">START</button>
+        <p class="rules">
+          Try to answer the following code-related questions within the time
+          limit. Keep in mind the incorrect answers will penalize your
+          score/time by ten seconds!
+        </p>
+      </div>
+    </section>
+    <section class="gameBox" id="question" data-state="hidden">
+      <h2 id="questionTitle"></h2>
+      <div id="questionChoice"></div>
+      <div id="alert"></div>
+    </section>
+    <section class="gameBox" id="initialCard" data-state="hidden">
+      <div>
+        <h2>All done!</h2>
+        <div class="highScore"></div>
+        <form action="#">
+          <label for="initials">Enter initials:</label><br />
+          <input type="text" id="initials" /><br /><br />
+          <button type="button" class="submit">Submit</button>
+        </form>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>

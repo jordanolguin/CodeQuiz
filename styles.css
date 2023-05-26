@@ -1,4 +1,174 @@
-h1 {
-  background-color: aqua;
-  color: aliceblue;
+body {
+  background-image: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2020/05/shutterstock_359492192.jpg);
+  background-color: #000000;
+  color: azure;
+  font-family: monospace;
+  font-size: 150%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  margin-bottom: 2%;
+  border-bottom: 1px double azure;
+  border-radius: 8px;
+  background-color: #000000;
+  box-shadow: 0 4px 6px 0 powderblue;
+}
+
+.gameBox {
+  text-align: center;
+  background-color: #000000;
+  padding-top: 1px;
+  width: 1000px;
+  height: 500px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 powderblue;
+}
+
+.startButton {
+  width: 200px;
+  height: 80px;
+  border-radius: 4px;
+  font-family: monospace;
+  color: #000000;
+  font-size: 39px;
+  background-color: powderblue;
+  border-color: blueviolet;
+  margin-bottom: 45px;
+  margin-top: 15px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  font-size: 35px;
+  box-shadow: inset 1px 1px 8px 0 blueviolet;
+}
+
+.rules {
+  font-size: 110%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+ul {
+  display: inline;
+}
+
+li {
+  background-color: powderblue;
+  color: #000000;
+  border: 1px solid blueviolet;
+  border-radius: 4px;
+  width: 400px;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  text-align: start;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+li:active {
+  font-size: 18px;
+  box-shadow: inset 1px 1px 8px 0 blueviolet;
+}
+
+section[data-state="hidden"] {
+  display: none;
+}
+
+#alert {
+  padding-top: 2%;
+  font-size: 39px;
+  text-shadow: 0 2px 4px powderblue;
+}
+
+.highScores,
+.goBack {
+  color: azure;
+  text-decoration: none;
+}
+
+.highScores:hover {
+  cursor: pointer;
+}
+
+.highScores:active {
+  font-size: 19px;
+}
+
+.goBack:hover {
+  cursor: pointer;
+}
+
+.goBack:active {
+  font-size: 19px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+}
+
+input[type="text"] {
+  width: 30%;
+  height: 23px;
+  padding: 12px 20px;
+  margin: 0 20px;
+  display: inline-block;
+  border: 1px solid blueviolet;
+  background-color: powderblue;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  height: 27.5px;
+  width: 10%;
+  border-radius: 4px;
+  font-family: monospace;
+  color: #000000;
+  font-size: 19px;
+  background-color: powderblue;
+  border-color: blueviolet;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: inset 1px 1px 8px 0 blueviolet;
+  font-size: 16px;
+}
+
+.scoreList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin: 5px;
+}
+
+.clearScores:hover {
+  cursor: pointer;
+}
+
+.clearScores:active {
+  font-size: 19px;
 }
